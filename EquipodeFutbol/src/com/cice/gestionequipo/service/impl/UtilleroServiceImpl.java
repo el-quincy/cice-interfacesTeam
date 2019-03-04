@@ -17,16 +17,7 @@ public class UtilleroServiceImpl implements UtilleroService {
 			System.out.println("El Nombre de "+personal.getNombre()+" Coincide");
 			System.out.println("El Apellido de "+personal.getApellido()+" Coincide");
 		personal.setFechaIncorporacion(fechaInicio);
-		dataSource.plantilla.put(id, personal);
-		System.out.println(personal.toString()+ " Contratado");
-		}else{
-		System.out.println(personal.toString()+" no contratada");
-		}
-		System.out.println("Verificando fecha de Entrada "
-		+ dataSource.plantilla.get(id).getFechaIncorporacion());
-	}
-
-	@Override
+		dataSource.plantilla.put(id, personaltgiorfgmk
 	public void despedir(Integer fechaFin, int id) {
 		// TODO Auto-generated method stub
 		
