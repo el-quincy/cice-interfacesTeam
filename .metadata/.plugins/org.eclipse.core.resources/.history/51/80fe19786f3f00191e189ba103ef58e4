@@ -1,0 +1,8 @@
+package com.cice.gestionequipo.service.impl;
+
+import com.cice.gestionequipo.service.UtilleroService;
+
+
+public class UtilleroServiceImpl implements UtilleroService {
+
+}

@@ -1,0 +1,5 @@
+package com.cice.gestionequipo.service;
+
+public class UtilleroServiceImpl {
+
+}
