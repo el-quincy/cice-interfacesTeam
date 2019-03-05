@@ -7,10 +7,8 @@ import com.cice.gestionequipo.service.UtilleroService;
 
 public class UtilleroServiceImpl extends PersonalServiceImpl implements UtilleroService  {
 
-	DataSource dataSource = new DataSource(); 
-
 	@Override
-	public void modificacionEstadoCapacidadDeViajar(int idUtillero, boolean nuevoEstado) {
+	public void modificacionEstadoCapacidadDeViajar(int idUtillero, boolean nuevoEstado, DataSource dataSource) {
 		Utillero utillero = (Utillero)dataSource.plantilla.get(idUtillero);
 		Personal personal = dataSource.plantilla.get(idUtillero);
 		if (personal.getId()==idUtillero) {
@@ -21,5 +19,7 @@ public class UtilleroServiceImpl extends PersonalServiceImpl implements Utillero
 		}
 		
 	}
+
+	
 
 }

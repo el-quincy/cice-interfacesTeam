@@ -5,11 +5,9 @@ import com.cice.gestionequipo.entidades.Personal;
 import com.cice.gestionequipo.service.PersonalService;
 
 public class PersonalServiceImpl implements PersonalService{
-	DataSource dataSource = new DataSource(); 
 	@SuppressWarnings("static-access")
 	@Override
-	public void contratar(Integer fechaInicio, int id, String name, String surname) {
-		
+	public void contratar(Integer fechaInicio, int id, String name, String surname, DataSource dataSource) {
 		Personal personal = dataSource.plantilla.get(id);
 		if(name.equalsIgnoreCase(personal.getNombre())
 				&&surname.equalsIgnoreCase(personal.getApellido())){
@@ -27,15 +25,19 @@ public class PersonalServiceImpl implements PersonalService{
 	}
 
 	@Override
-	public void despedir(Integer fechaFin, int id) {
+	public void despedir(Integer fechaFin, int id, DataSource dataSource) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void modificarSalario(int id,double nuevoSalario) {
+	public void modificarSalario(int Id, double nuevoSalario, DataSource dataSource) {
 		// TODO Auto-generated method stub
 		
 	}
+
+	
+
+	
 
 }

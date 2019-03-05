@@ -14,7 +14,7 @@ import com.cice.gestionequipo.entidades.Utillero;
 public class DataSource {
 
 	
-	public static List<Paritido> partidos ;
+	public static Map<Integer, Paritido> partidos ;
 	public static Map<Integer, Personal> plantilla;
 	public DataSource() {
 		super();
@@ -37,7 +37,7 @@ public class DataSource {
 		Jugador jugador15 = new Jugador(17, "Raul", "Bravo", 5000000.00);
 		Utillero utillero = new Utillero(18, "Pedro", "el rey de la toalla", 2700.50);
 		plantilla = new HashMap<>();
-		partidos = new ArrayList<>();
+		partidos = new HashMap<>();
 		plantilla.put(entrenador.getId(), entrenador);
 		plantilla.put(entrenador2.getId(), entrenador2);
 		plantilla.put(jugador.getId(), jugador);
