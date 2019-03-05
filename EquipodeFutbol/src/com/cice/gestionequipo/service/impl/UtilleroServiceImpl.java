@@ -1,8 +1,5 @@
 package com.cice.gestionequipo.service.impl;
 
-<<<<<<< HEAD
-public class UtilleroServiceImpl {
-=======
 import com.cice.gestionequipo.dao.DataSource;
 import com.cice.gestionequipo.entidades.Personal;
 import com.cice.gestionequipo.entidades.Utillero;
@@ -24,6 +21,6 @@ public class UtilleroServiceImpl extends PersonalServiceImpl implements Utillero
 		}
 		
 	}
->>>>>>> dev-pre
+
 
 }
