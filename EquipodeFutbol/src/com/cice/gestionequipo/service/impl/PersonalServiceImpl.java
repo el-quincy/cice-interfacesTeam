@@ -33,7 +33,7 @@ public class PersonalServiceImpl implements PersonalService{
 	}
 
 	@Override
-	public void modificarSalario(int id,double nuevoSalario) {
+	public void modificarSalario(double nuevoSalario) {
 		// TODO Auto-generated method stub
 		
 	}
