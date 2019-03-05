@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.cice.gestionequipo.entidades.Jugador;
 
-public interface PartidoService extends PersonalService {
+public interface PartidoService {
 	
 	
 	public void prepararPartido(int idEntrenador,List<Jugador> convocados, boolean enCasa, int IdUtillero);
