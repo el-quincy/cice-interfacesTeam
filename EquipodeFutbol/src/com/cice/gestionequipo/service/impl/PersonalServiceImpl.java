@@ -36,7 +36,6 @@ public class PersonalServiceImpl implements PersonalService {
 				System.out.println("Existe el empleado.");
 				personal.setFechaDespido(fechaFin);
 				System.out.println("El empleado con la id: " + id + " ha sido despedido a fecha de: " + fechaFin);
-				
 			} else {
 				System.out.println("No existe el empleado");
 			}
@@ -44,7 +43,6 @@ public class PersonalServiceImpl implements PersonalService {
 			System.out.println("No puedes introducir este id");
 		}
 		
-
 	}
 
 	@Override
